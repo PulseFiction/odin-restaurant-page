@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'PizzaFont';
+    src: url('./fonts/PizzaFont.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --clr-green: #008d46;
+    --clr-white: #fafeff;
+    --clr-red: #d2232c;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--clr-green);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    font-family: 'PizzaFont';
+    
+
+    
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 40pt;
+    margin-bottom: 0;
+    
+}
+
+h3 {
+    margin-top: 0;
+    color: white;
+}
+
+.nav {
+    background: url(./italyflag.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    border: solid black;
+}
+
+ul {
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li {
+    list-style: none;
+    font-size: 20pt;
+}
+
+
+
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    width: 80vw;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-box {
+    background-color: white;
+    border: solid black;
+    text-align: center;
+}
+.pizza-image {
+    border: solid rgb(0, 0, 0);
+    
+    border-radius: 5px;
+}
+
+.welcome {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    word-wrap: normal;
+    font-size: 20pt;
+    
+}
+
+
+
+
+/* Menu Page */
+
+.margherita, .pepperoni, .meat, .veggie {
+    width: 35vw;
+    color: white;
+    border: solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    font-size: 20pt;
+}
+
+li:hover {
+    cursor: pointer;
+}
